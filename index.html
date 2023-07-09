@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">Etch-a-Sketch</div>
+
+    <div id="container">
+      <div id="welcome-message">Welcome to Etch-a-Sketch! You can draw whatever you want.</div>
+    </div>
+  
+    <div id="input-container">
+      <input type="number" id="gridSizeInput" placeholder="Enter grid size" min="0" max="100">
+      <button onclick="createGrid()" class="button">Create Grid</button>
+      <input type="color" id="colorPicker">
+      <button id="randomColorsButton" onclick="toggleRandomColors()" class="button">Random Colors: OFF</button>
+      <button onclick="resetGrid()" class="button">Reset</button>
+      <button onclick="toggleEraser()" class="button" id="eraserButton">Eraser</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
